@@ -4,18 +4,17 @@
 
 # Le problème à résoudre
 
-Dans le jeu vidéo "Super Mario Bros." sorti en 1985, au début du premier niveau Mario doit sauter
-au dessus d'une pyramide de briques.
-Dans un fichier nommé `mario.py`, vous devez écrire un programme qui recrée cette pyramide avec le symbole `#` comme dans l'exemple ci-dessous (pyramide de 5).
+Dans le jeu vidéo "Super Mario Bros." sorti en 1985, au début du premier niveau, Mario doit sauter
+au dessus d'une pyramide de briques avec un trou au milieu.
+Dans un fichier nommé `mario.py`, vous devez écrire un programme qui recrée cette pyramide avec le symbole `#` comme dans l'exemple ci-dessous (pyramide de 4).
 
 ```bash
 $ python mario.py
-Height: 5
-       #  #
-      ##  ##
-     ###  ###
-    ####  ####
-   #####  #####
+Height: 4
+   #  #
+  ##  ##
+ ###  ###
+####  ####
 ```
 
 Comme vous le voyez, le programme commence par demander à l'utilisateur la hauteur (`Height`) 
@@ -32,15 +31,30 @@ $ python mario.py
 Height: -3
 Height: 15
 Height: 3
-       #  #
-      ##  ##
-     ###  ###
+  #  #
+ ##  ##
+###  ###
 ```
 
 > [!TIP]
 > Pour vérifier qu'une chaîne de caractères (`str`) contient uniquement des chiffres, vous avez la fonction `isdigit()` ([Doc str](https://docs.python.org/fr/3/library/stdtypes.html#str.isdigit))
 
 Vous remarquez que l'espace entre les deux parties de la pyramide est toujours de 2 briques quelque soit la hauteur.
+
+
+```bash
+$ python mario.py
+Height: 8
+       #  #
+      ##  ##
+     ###  ###
+    ####  ####
+   #####  #####
+  ######  ######
+ #######  #######
+########  ########
+```
+
 
 # Les tests
 
