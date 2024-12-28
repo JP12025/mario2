@@ -75,13 +75,6 @@ ne correspondent à aucune logique.
 
 > "La logique est le dernier refuge des gens sans imagination.” Oscar Wilde
 
-# Le rendu via git
-A tout moment, vous pouvez soumettre votre travail sur github visa un `push`.
+# How to Submit
 
-```bash
-git add mario.py
-git commit -m "My answer"
-git push
-```
-
-Des tests automatiques seront lancés dont vous pourrez voir les résultats sur github.
+Once you're done with all tasks, submit all your python files on Moodle
