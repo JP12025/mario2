@@ -2,7 +2,7 @@
 
 ![double pyramid](https://cs50.harvard.edu/x/2024/psets/1/mario/more/pyramids.png)
 
-# Le problème à résoudre
+# What to do
 
 In “Super Mario Bros.” released in 1985, toward the beginning, Mario must hop over adjacent pyramids of blocks. In a file called `mario.py`, implement a program that recreates that pyramid, using `#` for bricks, as in the below:
 
