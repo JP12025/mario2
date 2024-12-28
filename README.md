@@ -4,43 +4,7 @@
 
 # Le problème à résoudre
 
-Dans le jeu vidéo "Super Mario Bros." sorti en 1985, au début du premier niveau, Mario doit sauter
-au dessus d'une pyramide de briques avec un trou au milieu.
-Dans un fichier nommé `mario.py`, vous devez écrire un programme qui recrée cette pyramide avec le symbole `#` comme dans l'exemple ci-dessous (pyramide de 4).
-
-```bash
-$ python mario.py
-Height: 4
-   #  #
-  ##  ##
- ###  ###
-####  ####
-```
-
-Comme vous le voyez, le programme commence par demander à l'utilisateur la hauteur (`Height`) 
-de la pyramide et attend un `int` en réponse. Une fois que l'utilisateur a répondu, le programme affiche la
-pyramide sur la sortie standard.
-
-> [!TIP]
-> Pour transformer un `str`en `int`, il suffit d'utiliser la fonction `int()`
-
-Si l'utilisateur ne rentre pas un `int` compris entre 1 et 8  inclus, il faut redemander sans afficher de message d'erreur, comme dans l'exemple ci-dessous.
-
-```bash
-$ python mario.py
-Height: -3
-Height: 15
-Height: 3
-  #  #
- ##  ##
-###  ###
-```
-
-> [!TIP]
-> Pour vérifier qu'une chaîne de caractères (`str`) contient uniquement des chiffres, vous avez la fonction `isdigit()` ([Doc str](https://docs.python.org/fr/3/library/stdtypes.html#str.isdigit))
-
-Vous remarquez que l'espace entre les deux parties de la pyramide est toujours de 2 briques quelque soit la hauteur.
-
+In “Super Mario Bros.” released in 1985, toward the beginning, Mario must hop over adjacent pyramids of blocks. In a file called `mario.py`, implement a program that recreates that pyramid, using `#` for bricks, as in the below:
 
 ```bash
 $ python mario.py
@@ -55,25 +19,61 @@ Height: 8
 ########  ########
 ```
 
+First, prompt the user for an `int` for the pyramid’s actual height.
+The height **must** be between 2 an 10.
 
-# Les tests
+```bash
+$ python mario.py
+Height: 4
+   #  #
+  ##  ##
+ ###  ###
+####  ####
+```
 
-N'oubliez pas qu'il est important de tester son programme.
-En effet, lorsque vous décidez de tester un programme cela vous amène à vous poser des questions
-sur ce que fait votre programme et les cas particuliers.
+Notice that width of the “gap” between adjacent pyramids is equal to the width of two hashes, irrespective of the pyramids’ heights.
 
-Que se passe-t-il si l'utilisateur tape :
-* un nombre négatif ?
+> [!TIP]
+> To transform `str` into `int`, simply use `int()`.
+
+Re-prompt the user, again and again as needed, if their input is not correct.
+
+```bash
+$ python mario.py
+Height: -3
+Height: 15
+Height: 3
+  #  #
+ ##  ##
+###  ###
+```
+
+> [!TIP]
+> To check that a string (`str`) contains only digits, you may use `isdigit()`. ([Doc str](https://docs.python.org/fr/3/library/stdtypes.html#str.isdigit))
+
+# When to Do it
+
+By Sunday, january 12, 2025 at 11:59 PM
+
+# How to Test
+
+- Test your script with command `./check [-v] mario.py`
+- `-v` option gives the difference between what is expected and what your script prints
+
+Don't forget it's important to test your program.
+In fact, when you decide to test a program, you'll have to ask yourself questions about what your program does and what the special cases are.
+
+What happens if the user input is :
+* a negative number?
 * 0 ?
-* un nombre positif
-* des lettres ou des mots ?
-* rien du tout ?
+* a positive number
+* letters or words?
+* nothing at all?
 
-Nous avons tendance à faire confiance à la logique des utilisateurs mais, 
-lorsque nous concevons un logiciel, nous devons imaginer des réponses qui 
-ne correspondent à aucune logique.
+We tend to trust users' logic, but, when we write code, we have to imagine answers that don't follow any logic.
 
-> "La logique est le dernier refuge des gens sans imagination.” Oscar Wilde
+> "When you have eliminated the impossible, whatever remains, however improbable, must be the truth."
+> Sherlock Holmes
 
 # How to Submit
 

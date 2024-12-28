@@ -160,7 +160,7 @@ else
 fi
 
 ## Run test 04
-TEST_NAME="Mario2 trois -2 4"
+TEST_NAME="Mario2 trois 15 4"
 TEST_NUM="04"
 TEST_IN=.test/${TEST_NUM}.in
 TEST_EXP=.test/${TEST_NUM}.exp
@@ -190,7 +190,6 @@ else
 fi
 
 ## Run test 05
-
 TEST_NAME="Mario2 10"
 TEST_NUM="05"
 TEST_IN=.test/${TEST_NUM}.in
@@ -219,7 +218,6 @@ else
     fi
     echo ""
 fi
-
 
 ##################################################
 # Print Summary
