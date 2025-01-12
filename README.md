@@ -4,10 +4,10 @@
 
 # What to do
 
-In “Super Mario Bros.” released in 1985, toward the beginning, Mario must hop over adjacent pyramids of blocks. In a file called `mario.py`, implement a program that recreates that pyramid, using `#` for bricks, as in the below:
+In “Super Mario Bros.” released in 1985, toward the beginning, Mario must hop over adjacent pyramids of blocks. In a file called `mario2.py`, implement a program that recreates that pyramid, using `#` for bricks, as in the below:
 
 ```bash
-$ python mario.py
+$ python mario2.py
 Height: 8
        #  #
       ##  ##
@@ -23,7 +23,7 @@ First, prompt the user for an `int` for the pyramid’s actual height.
 The height **must** be between 2 an 10.
 
 ```bash
-$ python mario.py
+$ python mario2.py
 Height: 4
    #  #
   ##  ##
@@ -39,7 +39,7 @@ Notice that width of the “gap” between adjacent pyramids is equal to the wid
 Re-prompt the user, again and again as needed, if their input is not correct.
 
 ```bash
-$ python mario.py
+$ python mario2.py
 Height: -3
 Height: 15
 Height: 3
@@ -57,7 +57,7 @@ By Sunday, january 19, 2025 at 11:59 PM
 
 # How to Test
 
-- Test your script with command `./check mario.py`
+- Test your script with command `./check mario2.py`
 
 Don't forget it's important to test your program.
 In fact, when you decide to test a program, you'll have to ask yourself questions about what your program does and what the special cases are.
