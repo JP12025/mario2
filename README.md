@@ -20,7 +20,7 @@ Height: 8
 ```
 
 First, prompt the user for an `int` for the pyramid’s actual height.
-The height **must** be between 2 an 10.
+The height **must** be between 2 and 10.
 
 ```bash
 $ python mario2.py
