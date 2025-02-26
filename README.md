@@ -4,7 +4,9 @@
 
 # What to do
 
-In “Super Mario Bros.” released in 1985, toward the beginning, Mario must hop over adjacent pyramids of blocks. In a file called `mario2.py`, implement a program that recreates that pyramid, using `#` for bricks, as in the below:
+In “Super Mario Bros.” released in 1985, toward the beginning, Mario must hop over adjacent pyramids of blocks.
+In a file called `mario2.py` (Python) or `mario2.jl` (Julia), implement a program that recreates that pyramid, 
+using `#` for bricks, as in the below:
 
 ```bash
 $ python mario2.py
@@ -23,7 +25,7 @@ First, prompt the user for an `int` for the pyramid’s actual height.
 The height **must** be between 2 and 10.
 
 ```bash
-$ python mario2.py
+$ julia mario2.jl
 Height: 4
    #  #
   ##  ##
@@ -34,8 +36,9 @@ Height: 4
 Notice that width of the “gap” between adjacent pyramids is equal to the width of two hashes, irrespective of the pyramids’ heights.
 
 > [!TIP]
-> To transform `str` into `int`, simply use `int()`.
-
+> To transform `str` into `int`, simply use `int()` (Python).
+> 
+> To transform `String` into `Int`, simply use `parse()` (Julia).
 Re-prompt the user, again and again as needed, if their input is not correct.
 
 ```bash
@@ -57,7 +60,9 @@ By Sunday, january 19, 2025 at 11:59 PM
 
 # How to Test
 
-- Test your script with command `./check mario2.py`
+Test your script with command:
+- `./check -p mario2.py` if you write Python code
+- `./check -j mario2.jl` if you write Julia code
 
 Don't forget it's important to test your program.
 In fact, when you decide to test a program, you'll have to ask yourself questions about what your program does and what the special cases are.
