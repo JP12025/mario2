@@ -40,15 +40,7 @@ Notice that the width of the “gap” between adjacent pyramids is equal to the
 
 Re-prompt the user, again and again as needed, if their input is not correct.
 
-```bash
-$ python mario2.py
-Height: -3
-Height: 15
-Height: 3
-  #  #
- ##  ##
-###  ###
-```
+![Demo of mario2.py](mario2.gif)
 
 > [!TIP]
 > To check that a string (`str`) contains only digits, you may use `isdigit()`. ([Python ref](https://docs.python.org/3/library/stdtypes.html#str.isdigit))
